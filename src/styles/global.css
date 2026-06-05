@@ -1,11 +1,107 @@
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
 
- * {
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #df1c1c;
-  font-family: sans-serif;
+  font-family: var(--font-primary);
+  color: var(--gray-900);
+  background-color: var(--gray-100);
+  line-height: 1.6;
 }
+
+:root {
+  /* Cores principais */
+  --cor-primaria: #df1c1c;      /* vermelho - sua cor principal */
+  --cor-secundaria: #333333;    /* cinza escuro */
+  --cor-destaque: #ff6b6b;      /* vermelho claro para hover */
+  
+  /* Cores de fundo */
+  --bg-claro: #f5f5f5;
+  --bg-escuro: #1a1a1a;
+  
+  /* Cores de texto */
+  --texto-escuro: #333333;
+  --texto-claro: #ffffff;
+  --texto-cinza: #666666;
+  
+  /* Cores de borda */
+  --borda: #dddddd;
+  --borda-foco: #df1c1c;
+  
+  /* Sombras */
+  --sombra-pequena: 0 2px 5px rgba(0,0,0,0.1);
+  --sombra-media: 0 4px 10px rgba(0,0,0,0.15);
+
+/* Você pode criar variações (opcional) */
+  --cor-primaria-escura: #b01515;
+  --cor-primaria-clara: #e54b4b;
+
+  /* Cores da marca */
+  --primary: #df1c1c;
+  --primary-dark: #b01515;
+  --primary-light: #ffebeb;
+  
+  /* Neutras */
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-700: #495057;
+  --gray-900: #212529;
+  
+  /* Utilitárias */
+  --success: #28a745;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  
+  /* Espaçamentos */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+  
+  /* Tipografia */
+  --font-primary: 'Inter', sans-serif;
+  --font-size-small: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-large: 1.5rem;
+  --font-size-xlarge: 2rem;
+  
+  /* Bordas */
+  --border-radius: 4px;
+  --border-radius-large: 8px;
+
+}
+
+button {
+  /* background-color: var(--primary); */
+  /* color: white; */
+  /* border: none; */
+  /* padding: var(--spacing-small) var(--spacing-medium); */
+  /* border-radius: var(--border-radius); */
+  
+  height: 60px;
+  width: 150px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: var(--borda-foco);
+  color: var(--bg-claro);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1.5s;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+
+/* input{} */
+

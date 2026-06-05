@@ -1,4 +1,6 @@
-    header{
+
+
+header{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -7,14 +9,16 @@
         color: #fff;
     }
 
-    .logo{
+.logo{
         color: rgb(0, 255, 76);
         font-size: 1.5rem;
         font-weight: bold;
     }
 
-    .link{
-        color: rgb(144, 144, 153);
+.link{
+        color: rgb(245, 245, 248);
         margin-left: 1rem;
         text-decoration: none;
     } 
+
+  
